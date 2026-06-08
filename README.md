@@ -97,6 +97,9 @@ Through this project, I learned:
 » Building CLI applications
 
 ## Screenshot
+<img width="681" height="308" alt="Screenshot 2026-06-08 181225" src="https://github.com/user-attachments/assets/f2abbb6d-1927-4947-a696-d48982fd0343" />
+<img width="666" height="815" alt="Screenshot 2026-06-08 181301" src="https://github.com/user-attachments/assets/585e8190-2706-481f-a154-36f8c81ce86a" />
+
 
 
 ### GitHub Requirements Completed
