@@ -17,7 +17,7 @@ def add():
             break 
         except ValueError: 
             print("Invalid amount! Please enter a number.")
-            
+
     print("Expense categories are :\n")
     categories = ["Food","Transport","Entertainment","Others"]
     print(f"{'Food':<14} (1)\n{'Transport':<14} (2)\n{'Entertainment':<14} (3)\n{'Others':<14} (4)\n") 
@@ -36,11 +36,10 @@ def add():
 def display(rows):
     while True:
         ch = input("Do you want to filter expenses by category. (y,n) :: ").lower().strip()
-        print()
         categories = ["Food","Transport","Entertainment","Others"]
         if ch == "y":
             print("\nExpense categories are :\n")
-            print(f"{'Food':<14} (1)\n{'Transport':<14} (2)\n{'Entertainment':<14} (3)\n{'Others':<14} (4)") 
+            print(f"{'Food':<14} (1)\n{'Transport':<14} (2)\n{'Entertainment':<14} (3)\n{'Others':<14} (4)\n") 
             category = int(input("Choose any one of the above category :: "))
             while True:
                 if category < 1 or category >4:
@@ -84,7 +83,7 @@ def display(rows):
                 print("Category is not present in the Expenses")
                 break
         header = False
-    print("\nTotal Expense is ",total,"\n")
+    print("\nTotal Expense is ",total)
 def view():
     try:
         with open("data.txt", "r") as f:
@@ -99,7 +98,7 @@ def view():
         print("Empty file created successfully.")
 
 while True:
-        print(f"{'CLI Expense Tracker':-^50}\n")
+        print(f"\n{'CLI Expense Tracker':-^50}\n")
         print("1. Add an expense.")
         print("2. View all expenses.")
         print("3. Exit\n")
@@ -111,6 +110,7 @@ while True:
             print(f"{'Past Expenses':-^50}\n")
             view()
         elif ch == 3:
+            print(f"{'Thank You':-^50}\n")
             break
         else:
             print("Invalid input! Please enter a number.\n") 
