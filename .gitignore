@@ -3,4 +3,4 @@ __pycache__/
 *.pyc
 
 #Ignore data file
-data.csv
+data.txt
