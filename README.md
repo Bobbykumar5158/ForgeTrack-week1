@@ -64,9 +64,9 @@ ExpenseTracker.py
 
 
 ## Sample Expense File Format
-24/01/2006,400.0,Food,party
-24/3/2003,500.0,Transport,petrol
-25/12/2025,700.0,Others,stationary
+24/01/2006,400.0,Food,party<br>
+24/3/2003,500.0,Transport,petrol<br>
+25/12/2025,700.0,Others,stationary<br>
 4/2/2022,649.0,Others,mouse
 
 Format:
