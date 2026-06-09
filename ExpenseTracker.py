@@ -1,3 +1,4 @@
+# this function is used to find out the max length of a column element
 def max_column(lst,length):
     idx = 0
     for j in lst:
@@ -6,6 +7,7 @@ def max_column(lst,length):
         idx+=1
     return length
 
+# this function is used for adding expense in the file
 def add():
     date = input("Enter the date DD/MM/YYYY :: ").strip()
     while True: 
@@ -33,6 +35,7 @@ def add():
     with open("data.txt","a") as f:
         f.write(row)
 
+# this function is used to print expenses in tabular form
 def display(rows):
     while True:
         ch = input("Do you want to filter expenses by category. (y,n) :: ").lower().strip()
@@ -84,6 +87,8 @@ def display(rows):
                 break
         header = False
     print("\nTotal Expense is ",total)
+
+# this function reads data from file and then call display function for output
 def view():
     try:
         with open("data.txt", "r") as f:
